@@ -1,0 +1,33 @@
+<tabset>
+	<tab heading="Coupon collector's problem">
+	<div ng-controller="CouponCollectionCtrl">
+		<form class="form-horizontal" role="form">
+			<div class="form-group">
+				<label class="col-sm-2 control-label" for="x">E(X)</label>
+				<div class="col-sm-3"><input id="x" type="number" class="form-control" ng-model="x" placeholder="X = ?"></div>
+			</div>
+		</form>
+		<span>E({{x}}): {{ result() }}</span>
+	</div>
+	</tab>
+	<tab heading="Binomial distribution">
+	<div ng-controller="BinomialDistCtrl">
+		<form class="form-horizontal" role="form">
+			<div class="form-group">
+				<label class="col-sm-2 control-label" for="n">n</label>
+				<div class="col-sm-3"><input id="n" type="number" class="form-control" ng-model="n" placeholder="n = ?"></div>
+			</div>
+			<div class="form-group">
+				<label class="col-sm-2 control-label" for="r">r</label>
+				<div class="col-sm-3"><input id="r" type="number" class="form-control" ng-model="r" placeholder="r = ?"></div>
+			</div>
+			<div class="form-group">
+				<label class="col-sm-2 control-label" for="p">p</label>
+				<div class="col-sm-3"><input id="p" type="number" class="form-control" ng-model="p" placeholder="p = ?"></div>
+			</div>
+		</form>
+		<div>P(X={{r}}): {{ result() }}</div>
+		<div>E(X): {{ expectedValue() }}</div>
+	</div>
+	</tab>
+</tabset>
