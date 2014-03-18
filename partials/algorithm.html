@@ -1,0 +1,17 @@
+<tabset>
+	<tab heading="Max-Flow Min-Cut">
+	<div ng-controller="MaxFlowMinCutCtrl">
+		<form class="form-horizontal" role="form">
+			<div class="form-group">
+				<label class="col-sm-2 control-label" for="x">Input: </label>
+				<div class="col-sm-3">
+					<textarea class="form-control" ng-model="input" rows="7"></textarea>
+				</div>
+			</div>
+		</form>
+		<div>Max-Flow: {{ flow }}</div>
+		<div>Min-Cut: {{ cut }}</div>
+		<pre>{{main()}}</pre>
+	</div>
+	</tab>
+</tabset>
